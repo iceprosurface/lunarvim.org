@@ -60,7 +60,7 @@ For a more lightweight, easier-to-use alternative, check out the author's new, w
   'wfxr/minimap.vim',
   build = "cargo install --locked code-minimap",
   -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
-  config = function ()
+  init = function ()
     vim.cmd ("let g:minimap_width = 10")
     vim.cmd ("let g:minimap_auto_start = 1")
     vim.cmd ("let g:minimap_auto_start_win_enter = 1")
